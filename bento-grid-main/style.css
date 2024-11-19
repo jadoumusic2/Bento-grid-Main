@@ -40,9 +40,7 @@ div img {
     
 }
 
-.create{
-    background-color: blue;
-}
+
 #create-post{
     width: 200px;
     padding-left: 20px;
@@ -56,6 +54,10 @@ div img {
     grid-row: 1/4;
     justify-items: end;
     text-align: center;
+    overflow: hidden;
+    letter-spacing: 0.5px;
+    text-align: left;
+    
 
 }
 
@@ -68,6 +70,9 @@ div img {
     display: grid;
     grid-column: 2/3;
     grid-row: 3/4;
+    overflow: hidden; 
+    line-height: 20px;
+    letter-spacing: 0.3px;
 }
 
 #bloc5{
@@ -78,6 +83,8 @@ div img {
 
 }
 
+
+
 #bloc6{
     background-color: hsl(256, 67%, 59%);
     display: grid;
@@ -87,6 +94,7 @@ div img {
 
 #bloc7{
     background-color:hsl(39, 100%, 71%);
+    overflow: hidden;
 }
 
 #bloc8{
@@ -126,4 +134,10 @@ div img {
     color: hsl(256, 67%, 59%);
     font-style: italic;
     
+}
+
+.content{
+    display: flex; /* Utilise flex pour le contenu */
+    align-items: center; /* Aligne verticalement l'image et le texte */
+    gap: 15px; /* Optionnel : espace entre le texte et l'image */
 }
